@@ -9,7 +9,7 @@ declare const $ : any;
   templateUrl: './forex.component.html',
   styleUrls: ['./forex.component.css']
 })
-export class ForexComponent implements OnInit {
+export class ForexComponent implements OnInit, AfterViewInit {
   private _table1 : any;
 
   constructor(private renderer : Renderer2, private http : HttpClient) { }
